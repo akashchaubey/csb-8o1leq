@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spread Operator</title>
+  </head>
+  <body>
+    <h1>Spread Operator</h1>
+    <script>
+      let aryA = ["akash", "neha", "Monu"];
+      let aryB = ["Monu", "akash", "neha"];
+      let aryC = [...aryA, ...aryB]; // use of Spread Operator
+
+      console.log(aryA);
+      console.log(aryB);
+      console.log(aryC);
+
+      const [first, ...remaining] = aryC; //Use of Array Destructuring
+      console.log(first);
+      console.log(remaining);
+    </script>
+  </body>
+</html>
